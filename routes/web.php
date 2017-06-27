@@ -17,4 +17,18 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/testmodel',function(){
+	$query = App\Posts::all();
+	return $query;
+});
+
+Route::get('/testmodel1',function(){
+	$query1 = App\Post1::find(1);
+	return $query1;
+});
+
+Route::get('/tugassiswa',function(){
+	$query2 = App\Siswa::all();
+	return $query2;
+});
