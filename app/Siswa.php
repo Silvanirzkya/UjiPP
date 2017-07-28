@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Siswa extends Model
 {
     //
-    protected $table = 'Post1';
+    protected $table = 'siswa';
+    protected $fillable = ['nama','kelas','sekolah'];
+    protected $visible = ['nama','kelas','sekolah'];
+    public $timestamps = true;
 }

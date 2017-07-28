@@ -32,3 +32,18 @@ Route::get('/tugassiswa',function(){
 	$query2 = App\Siswa::all();
 	return $query2;
 });
+
+
+
+Route::get('/satu', function () {
+    return view('satu');
+});
+
+
+Route::get('/dua', function () {
+    return view('dua');
+});
+
+Route::get('/tiga', function () {
+    return view('tiga');
+});
